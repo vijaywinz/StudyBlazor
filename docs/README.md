@@ -18,7 +18,7 @@ features:
   details: Client side coding can be done using C# with WebAssembly open standard instead of Javascript.
 - title: Performant
   details: Provides near native performance using open source .net core platform in browser.
-footer: Copyright © 2019 - studyblazor.com
+footer: Site built using Vuepress | Copyright © 2019 - studyblazor.com
 ---
 
 ### Sample Blazor Component
