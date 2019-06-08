@@ -12,9 +12,16 @@ module.exports = {
     themeConfig: {
         nav: [
             { text: 'Home', link: '/' },
-            { text: 'Tutorial', link: '/tutorial/' },
-            { text: 'Contact', link: '/contact/' },
-            { text: 'About Blazor', link: 'https://blazor.net' }
+            { text: 'Tutorial', link: '/tutorial/' },            
+            { text: 'About Blazor', link: 'https://blazor.net' },
+            { text: 'More', 
+                items: 
+                [
+                    {text: 'Contact', link: '/contact/'},
+                    {text: 'Privacy Policy', link: '/privacy-policy/'},
+                    {text: 'Terms and Conditions', link:'/terms-and-conditions/'}
+                ] 
+            }
         ],
         sidebar: {
             '/tutorial/': [
