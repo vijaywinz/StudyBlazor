@@ -1,0 +1,28 @@
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "dependencies": "C#, .Net, SPA",
+    "proficiencyLevel": "Beginner",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://studyblazor.com"
+    },
+    "headline": "Study Blazor .NET",
+    "image": [
+        "https://studyblazor.com/logo.jpg"
+    ],
+    "datePublished": "2019-05-25",
+    "author": {
+        "@type": "Person",
+        "name": "Vijay"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "studyblazor.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://studyblazor.com/logo.jpg"
+        }
+    },
+    "description": "Blazor tutorial for beginners, in simple and easy steps starting from basics to advanced concepts with more code snippets."
+}
