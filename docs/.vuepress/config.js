@@ -43,8 +43,15 @@ module.exports = {
                 'Routing',
                 'Layouts',
                 'FutureOfBlazor'
+            ],
+            '/privacy-policy/': [
+                ''
+            ],
+            '/terms-and-conditions/': [
+                ''
             ]
-        }
+        },
+        lastUpdated: 'Last Updated'
     },
     plugins: [
         ['@vuepress/back-to-top', true],
