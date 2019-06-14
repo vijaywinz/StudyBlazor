@@ -4,7 +4,7 @@ module.exports = {
     description: 'Blazor tutorial for beginners, in simple and easy steps starting from basics to advanced concepts with more code snippets.',
     head: [
         ['link', { rel: 'icon', href: `/logo.png` }],
-        ['link', { rel: 'shortcut icon', href: `/favicon.ico`, type:'image/x-icon' }],
+        ['link', { rel: 'shortcut icon', href: `/favicon.ico`, type:'image/x-icon' }],        
         ['meta', { name: 'robots', content: 'all' }],
         ['meta', { name: 'keywords', content: 'Blazor Tutorial, SPA, ASP.Net Core, C#, Javascript Alternative, Web Assembly' }],
         ['meta', { property:'og:type',content:'website'}],
@@ -17,6 +17,25 @@ module.exports = {
         ['script', { async:'' , src: '//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js' }],
         ['script', {},
             '(adsbygoogle = window.adsbygoogle || []).push({ google_ad_client: "ca-pub-9955716341281227", enable_page_level_ads: true });'],
+            ['link', { rel: 'stylesheet', type:"text/css", href: 'https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css' }],
+        ['script',{ src: 'https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js'}],
+        ['script',{}, `window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+              "palette": {
+                "popup": {
+                  "background": "#d4d4d4",
+                  "text": "#2c3e50"
+                },
+                "button": {
+                  "background": "#7b3cc3",
+                  "text": "#ffffff"
+                }
+              },
+              "content": {
+                "dismiss": "Close",
+                "href": "/privacy-policy/"
+              }
+            })});`]
     ],
     themeConfig: {
         nav: [
