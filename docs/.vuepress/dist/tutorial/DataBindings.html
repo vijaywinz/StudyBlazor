@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Data Bindings | Study Blazor .NET</title>
+    <meta name="description" content="Blazor tutorial for beginners, in simple and easy steps starting from basics to advanced concepts with more code snippets.">
+    <link rel="icon" href="/logo.png">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <meta name="robots" content="all">
+  <meta name="keywords" content="Blazor Tutorial, SPA, ASP.Net Core, C#, Javascript Alternative, Web Assembly">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Study Blazor">
+  <meta property="og:description" content="Blazor tutorial for beginners, in simple and easy steps starting from basics to advanced concepts with more code snippets.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://studyblazor.com">
+  <meta property="og:image" content="https://studyblazor.com/logo.png">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","dependencies":"C#, .Net, SPA","proficiencyLevel":"Beginner","mainEntityOfPage":{"@type":"WebPage","@id":"https://studyblazor.com"},"headline":"Study Blazor .NET","image":["https://studyblazor.com/logo.jpg"],"datePublished":"2019-05-25","author":{"@type":"Person","name":"Vijay"},"publisher":{"@type":"Organization","name":"studyblazor.com","logo":{"@type":"ImageObject","url":"https://studyblazor.com/logo.jpg"}},"description":"Blazor tutorial for beginners, in simple and easy steps starting from basics to advanced concepts with more code snippets."}</script>
+  <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({ google_ad_client: "ca-pub-9955716341281227", enable_page_level_ads: true });</script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+  <script>window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+              "palette": {
+                "popup": {
+                  "background": "#d4d4d4",
+                  "text": "#2c3e50"
+                },
+                "button": {
+                  "background": "#7b3cc3",
+                  "text": "#ffffff"
+                }
+              },
+              "content": {
+                "dismiss": "Close",
+                "href": "/privacy-policy/"
+              }
+            })});</script>
+    
+    <link rel="preload" href="/assets/css/0.styles.beeb2ff0.css" as="style"><link rel="preload" href="/assets/js/app.e40b9eed.js" as="script"><link rel="preload" href="/assets/js/2.b391b017.js" as="script"><link rel="preload" href="/assets/js/12.4caa5bc1.js" as="script"><link rel="prefetch" href="/assets/js/10.3f9e861d.js"><link rel="prefetch" href="/assets/js/11.4c0a0403.js"><link rel="prefetch" href="/assets/js/13.9b7b12a4.js"><link rel="prefetch" href="/assets/js/14.71b34076.js"><link rel="prefetch" href="/assets/js/15.91a4a63e.js"><link rel="prefetch" href="/assets/js/16.9a991abd.js"><link rel="prefetch" href="/assets/js/17.f9eb5e26.js"><link rel="prefetch" href="/assets/js/18.702ff499.js"><link rel="prefetch" href="/assets/js/19.88995de2.js"><link rel="prefetch" href="/assets/js/3.f710663c.js"><link rel="prefetch" href="/assets/js/4.9c750cb1.js"><link rel="prefetch" href="/assets/js/5.674affc1.js"><link rel="prefetch" href="/assets/js/6.b02d348d.js"><link rel="prefetch" href="/assets/js/7.8039cef2.js"><link rel="prefetch" href="/assets/js/8.2a3f376a.js"><link rel="prefetch" href="/assets/js/9.f52d49b3.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.beeb2ff0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Study Blazor .NET</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/tutorial/" class="nav-link router-link-active">Tutorial</a></div><div class="nav-item"><a href="https://blazor.net" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  About Blazor
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">More</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/contact/" class="nav-link">Contact</a></li><li class="dropdown-item"><!----> <a href="/privacy-policy/" class="nav-link">Privacy Policy</a></li><li class="dropdown-item"><!----> <a href="/terms-and-conditions/" class="nav-link">Terms and Conditions</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/tutorial/" class="nav-link router-link-active">Tutorial</a></div><div class="nav-item"><a href="https://blazor.net" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  About Blazor
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">More</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/contact/" class="nav-link">Contact</a></li><li class="dropdown-item"><!----> <a href="/privacy-policy/" class="nav-link">Privacy Policy</a></li><li class="dropdown-item"><!----> <a href="/terms-and-conditions/" class="nav-link">Terms and Conditions</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/tutorial/" class="sidebar-link">Introduction</a></li><li><a href="/tutorial/Install.html" class="sidebar-link">Installation</a></li><li><a href="/tutorial/AboutComponent.html" class="sidebar-link">About Components</a></li><li><a href="/tutorial/DataBindings.html" class="active sidebar-link">Data Bindings</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/tutorial/DataBindings.html#one-way-binding" class="sidebar-link">One way binding</a></li><li class="sidebar-sub-header"><a href="/tutorial/DataBindings.html#two-way-binding" class="sidebar-link">Two way binding</a></li><li class="sidebar-sub-header"><a href="/tutorial/DataBindings.html#cascading-values-and-parameters" class="sidebar-link">Cascading values and parameters</a></li><li class="sidebar-sub-header"><a href="/tutorial/DataBindings.html#render-fragments-dynamic-content" class="sidebar-link">Render Fragments (Dynamic Content)</a></li></ul></li><li><a href="/tutorial/ComponentLifecycle.html" class="sidebar-link">Lifecycle Methods</a></li><li><a href="/tutorial/DependencyInjection.html" class="sidebar-link">Dependency Injection</a></li><li><a href="/tutorial/Routing.html" class="sidebar-link">Routing</a></li><li><a href="/tutorial/Layouts.html" class="sidebar-link">Page Layouts</a></li><li><a href="/tutorial/FutureOfBlazor.html" class="sidebar-link">Future of Blazor</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="data-bindings"><a href="#data-bindings" aria-hidden="true" class="header-anchor">#</a> Data Bindings</h1> <h2 id="one-way-binding"><a href="#one-way-binding" aria-hidden="true" class="header-anchor">#</a> One way binding</h2> <p>One way binding is simple and straight forward in Blazor and no need of any UI refresh/render. The following example shows the one way data binding,</p> <div class="language-csharp extra-class"><pre class="language-csharp"><code><span class="token comment">//Counter.razor</span>
+@page <span class="token string">&quot;/counter&quot;</span>
+
+<span class="token operator">&lt;</span>h1<span class="token operator">&gt;</span>Counter<span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>p<span class="token operator">&gt;</span><span class="token class-name">Current</span> count<span class="token punctuation">:</span> @currentCount<span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>button <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;btn btn-primary&quot;</span> onclick<span class="token operator">=</span><span class="token string">&quot;@IncrementCount&quot;</span><span class="token operator">&gt;</span><span class="token class-name">Click</span> me<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span>
+
+@functions <span class="token punctuation">{</span>
+    <span class="token keyword">int</span> currentCount <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">void</span> <span class="token function">IncrementCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        currentCount<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Here <code>@currentComponent</code> value increments based on the number of click on button <code>Click me</code>. The value in the <code>&lt;p&gt;</code> tag element automatically refreshes and no need for any component refresh.</p> <h2 id="two-way-binding"><a href="#two-way-binding" aria-hidden="true" class="header-anchor">#</a> Two way binding</h2> <p>Blazor provides multiple options for two way binding in blazor and elegant to write when compared to some popular JS languages,</p> <h3 id="same-component"><a href="#same-component" aria-hidden="true" class="header-anchor">#</a> Same Component:</h3> <p>The <code>bind</code> attribute provides two way data binding in blazor. Below example on checkbox uses bind attribute in the same component,</p> <div class="language-csharp extra-class"><pre class="language-csharp"><code><span class="token comment">//TwoWayBind.razor</span>
+@page <span class="token string">&quot;/two-way-binding&quot;</span>
+
+<span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">&quot;checkbox&quot;</span> 
+       bind<span class="token operator">=</span><span class="token string">&quot;@updateString&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>p<span class="token operator">&gt;</span><span class="token class-name">This</span> <span class="token keyword">string</span> will <span class="token keyword">get</span> <span class="token keyword">value</span> <span class="token keyword">from</span> above text field <span class="token punctuation">:</span> @updateString<span class="token punctuation">.</span><span class="token function">ToString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span>
+
+@functions <span class="token punctuation">{</span>
+    <span class="token class-name">Boolean</span> updateString <span class="token punctuation">{</span><span class="token keyword">get</span><span class="token punctuation">;</span> <span class="token keyword">set</span><span class="token punctuation">;</span><span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">true</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Also the two way binding is achieved using lamda expression in <code>onchange</code> attribute. Don’t worry, Blazor provides simple way along with <code>bind</code> attribute, more details below..</p> <div class="language-csharp extra-class"><pre class="language-csharp"><code><span class="token comment">//TwoWayBind.razor</span>
+@page <span class="token string">&quot;/two-way-binding&quot;</span>
+
+<span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">&quot;text&quot;</span> 
+       <span class="token keyword">value</span><span class="token operator">=</span><span class="token string">&quot;@updateString&quot;</span> 
+       onchange<span class="token operator">=</span><span class="token string">&quot;@((UIChangeEventArgs __e) =&gt; updateString = __e.Value.ToString())&quot;</span><span class="token operator">/</span><span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>p<span class="token operator">&gt;</span><span class="token class-name">This</span> <span class="token keyword">string</span> will <span class="token keyword">get</span> <span class="token keyword">value</span> <span class="token keyword">from</span> above text field<span class="token punctuation">:</span> @updateString<span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span>
+
+@functions <span class="token punctuation">{</span>
+    <span class="token keyword">string</span> updateString <span class="token operator">=</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>The <code>bind</code> attribute can be extended with value and events <code>bind-value-&lt;onevents&gt;</code>, the above example can be written as below and used <code>oninput</code> here instead of <code>onchange</code>,</p> <div class="language-csharp extra-class"><pre class="language-csharp"><code><span class="token comment">//TwoWayBind.razor</span>
+@page <span class="token string">&quot;/two-way-binding&quot;</span>
+
+<span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">&quot;text&quot;</span> 
+       bind<span class="token operator">-</span><span class="token keyword">value</span><span class="token operator">-</span>oninput<span class="token operator">=</span><span class="token string">&quot;@updateString&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>p<span class="token operator">&gt;</span><span class="token class-name">This</span> <span class="token keyword">string</span> will <span class="token keyword">get</span> <span class="token keyword">value</span> <span class="token keyword">from</span> above text field <span class="token punctuation">:</span> @updateString<span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span>
+
+@functions <span class="token punctuation">{</span>
+    <span class="token keyword">string</span> updateString <span class="token operator">=</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="between-components"><a href="#between-components" aria-hidden="true" class="header-anchor">#</a> Between Components:</h3> <h4 id="approach-1"><a href="#approach-1" aria-hidden="true" class="header-anchor">#</a> Approach 1:</h4> <p>The data passed between components happens through Component attributes and its properties mapping, this approach uses <code>Action&lt;TItem&gt;</code> datatype.</p> <div class="language-csharp extra-class"><pre class="language-csharp"><code><span class="token comment">//ParentComponent.razor</span>
+<span class="token operator">&lt;</span>h3<span class="token operator">&gt;</span> <span class="token class-name">Parent</span> Component<span class="token operator">&lt;</span><span class="token operator">/</span>h3<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>p<span class="token operator">&gt;</span><span class="token class-name">String</span> <span class="token keyword">in</span> Parent<span class="token punctuation">:</span> @parentString<span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>button onclick<span class="token operator">=</span><span class="token string">&quot;@PassToChild&quot;</span><span class="token operator">&gt;</span><span class="token class-name">Pass</span> <span class="token class-name">String</span> <span class="token class-name">To</span> Child<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span><span class="token class-name">ChildComponent</span> 
+        ToChild<span class="token operator">=</span>@parentString
+        FromChild<span class="token operator">=</span>@ReceivedFromChild<span class="token operator">&gt;</span>    
+<span class="token operator">&lt;</span><span class="token operator">/</span>ChildComponent<span class="token operator">&gt;</span>
+
+@functions<span class="token punctuation">{</span>
+    <span class="token keyword">private</span> <span class="token keyword">string</span> parentString <span class="token operator">=</span> <span class="token string">&quot;Initial Parent String&quot;</span><span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">PassToChild</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        parentString <span class="token operator">+=</span> <span class="token string">&quot;- To Child&quot;</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">ReceivedFromChild</span><span class="token punctuation">(</span><span class="token keyword">string</span> str<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        parentString <span class="token operator">=</span> str<span class="token punctuation">;</span>
+        <span class="token function">StateHasChanged</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-csharp extra-class"><pre class="language-csharp"><code><span class="token comment">//ChildComponent.razor</span>
+<span class="token operator">&lt;</span>h4<span class="token operator">&gt;</span><span class="token class-name">Child</span> Component<span class="token operator">&lt;</span><span class="token operator">/</span>h4<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>button onclick<span class="token operator">=</span><span class="token string">&quot;@PassToParent&quot;</span><span class="token operator">&gt;</span><span class="token class-name">Pass</span> <span class="token class-name">String</span> to Parent<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>p<span class="token operator">&gt;</span><span class="token class-name">String</span> received <span class="token keyword">from</span> Parent <span class="token punctuation">:</span> @ToChild<span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span>
+
+@functions<span class="token punctuation">{</span>
+    <span class="token punctuation">[</span><span class="token class-name">Parameter</span><span class="token punctuation">]</span>
+    <span class="token keyword">private</span> <span class="token keyword">string</span> ToChild<span class="token punctuation">{</span><span class="token keyword">get</span><span class="token punctuation">;</span><span class="token keyword">set</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+    <span class="token punctuation">[</span><span class="token class-name">Parameter</span><span class="token punctuation">]</span>
+    Action<span class="token operator">&lt;</span><span class="token keyword">string</span><span class="token operator">&gt;</span> FromChild<span class="token punctuation">{</span><span class="token keyword">get</span><span class="token punctuation">;</span><span class="token keyword">set</span><span class="token punctuation">;</span><span class="token punctuation">}</span> 
+    
+    <span class="token keyword">private</span> <span class="token keyword">string</span> childString<span class="token punctuation">;</span>
+    
+    <span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">PassToParent</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        childString <span class="token operator">=</span> ToChild <span class="token operator">+</span> <span class="token string">&quot;- To Parent&quot;</span><span class="token punctuation">;</span>
+        <span class="token function">FromChild</span><span class="token punctuation">(</span>childString<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Here <code>FromChild</code> attribute/property in ChildComponent uses <code>Action&lt;string&gt;</code> datatype to pass value from Child to Parent Component.
+In Parent, there is corresponding receiver function <code>ReceivedFromChild</code> with string parameter and this will get triggered on button click in ChildComponent and inturn notify <code>PassToParent</code>, but to notify the state has changed in Parent Component we are using <code>StateHasChanged()</code> inbuilt Blazor function.</p> <h4 id="approach-2"><a href="#approach-2" aria-hidden="true" class="header-anchor">#</a> Approach 2:</h4> <p>This approach specifies any ChangeEvents using <code>EventCallback</code> datatype and we can pass between components instead of data, and there is no need for <code>StateHasChanged()</code> function to call here,</p> <div class="language-csharp extra-class"><pre class="language-csharp"><code><span class="token comment">//ParentComponent.razor</span>
+<span class="token operator">&lt;</span>h3<span class="token operator">&gt;</span> <span class="token class-name">Parent</span> Component<span class="token operator">&lt;</span><span class="token operator">/</span>h3<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>p<span class="token operator">&gt;</span><span class="token class-name">Logging</span> <span class="token class-name">Event</span> triggered <span class="token keyword">from</span> Child<span class="token punctuation">:</span> @logString<span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span><span class="token class-name">ChildComponent</span> 
+        Trigger<span class="token operator">=</span>@TriggerFromChild<span class="token operator">&gt;</span>    
+<span class="token operator">&lt;</span><span class="token operator">/</span>ChildComponent<span class="token operator">&gt;</span>
+
+@functions<span class="token punctuation">{</span>
+    <span class="token keyword">private</span> <span class="token keyword">string</span> logString <span class="token operator">=</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">TriggerFromChild</span><span class="token punctuation">(</span><span class="token class-name">UIMouseEventArgs</span> e<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        logString <span class="token operator">=</span> e<span class="token punctuation">.</span><span class="token function">ToString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-csharp extra-class"><pre class="language-csharp"><code><span class="token comment">//ChildComponent.razor</span>
+<span class="token operator">&lt;</span>h4<span class="token operator">&gt;</span><span class="token class-name">Child</span> Component<span class="token operator">&lt;</span><span class="token operator">/</span>h4<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>button onclick<span class="token operator">=</span><span class="token string">&quot;@Trigger&quot;</span><span class="token operator">&gt;</span><span class="token class-name">Trigger</span> Parent<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span>
+
+@functions<span class="token punctuation">{</span>
+    <span class="token punctuation">[</span><span class="token class-name">Parameter</span><span class="token punctuation">]</span>
+    <span class="token keyword">private</span> EventCallback<span class="token operator">&lt;</span>UIMouseEventArgs<span class="token operator">&gt;</span> Trigger <span class="token punctuation">{</span> <span class="token keyword">get</span><span class="token punctuation">;</span> <span class="token keyword">set</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>     
+<span class="token punctuation">}</span>
+</code></pre></div><p>Here in ChildComponent, the <code>Trigger</code> property call backs the corresponding <code>TriggerFromChild</code> method in ParentComponent with <code>UIMouseEventArgs</code> parameter and the event is logged as string in Parent.</p> <p>Below are the supported Event arguments,</p> <ul><li>UIEventArgs</li> <li>UIChangeEventArgs</li> <li>UIKeyboardEventArgs</li> <li>UIMouseEventArgs</li></ul> <h4 id="approach-3"><a href="#approach-3" aria-hidden="true" class="header-anchor">#</a> Approach 3:</h4> <p>Here is an another approach for two way binding between components, where we can <code>Invoke</code> an <code>Action</code> properties manually based on any events/method execution,</p> <div class="language-csharp extra-class"><pre class="language-csharp"><code><span class="token comment">//ParentComponent.razor</span>
+<span class="token operator">&lt;</span>h3<span class="token operator">&gt;</span> <span class="token class-name">Parent</span> Component<span class="token operator">&lt;</span><span class="token operator">/</span>h3<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>p<span class="token operator">&gt;</span><span class="token class-name">Logging</span> <span class="token class-name">Event</span> triggered <span class="token keyword">from</span> Child<span class="token punctuation">:</span> @logString<span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span><span class="token class-name">ChildComponent</span> 
+        EventFromChild<span class="token operator">=</span>@TriggerFromChild<span class="token operator">&gt;</span>    
+<span class="token operator">&lt;</span><span class="token operator">/</span>ChildComponent<span class="token operator">&gt;</span>
+
+@functions<span class="token punctuation">{</span>
+    <span class="token keyword">private</span> <span class="token keyword">string</span> logString <span class="token operator">=</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">TriggerFromChild</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        logString <span class="token operator">=</span> <span class="token string">&quot;Triggered From Child using Action and Invoke&quot;</span><span class="token punctuation">;</span>  
+        <span class="token function">StateHasChanged</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>      
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-csharp extra-class"><pre class="language-csharp"><code><span class="token comment">//ChildComponent.razor</span>
+<span class="token operator">&lt;</span>h4<span class="token operator">&gt;</span><span class="token class-name">Child</span> Component<span class="token operator">&lt;</span><span class="token operator">/</span>h4<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>button onclick<span class="token operator">=</span><span class="token string">&quot;@Trigger&quot;</span><span class="token operator">&gt;</span><span class="token class-name">Trigger</span> Parent<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span>
+
+@functions<span class="token punctuation">{</span>
+    <span class="token punctuation">[</span><span class="token class-name">Parameter</span><span class="token punctuation">]</span>
+    <span class="token keyword">private</span> <span class="token class-name">Action</span> EventFromChild<span class="token punctuation">{</span><span class="token keyword">get</span><span class="token punctuation">;</span><span class="token keyword">set</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+
+    <span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">Trigger</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        EventFromChild<span class="token punctuation">?.</span><span class="token function">Invoke</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>       
+<span class="token punctuation">}</span>
+</code></pre></div><p>Here in ChildComponent the Action property <code>EventFromChild</code> is manually triggered using <code>Invoke</code> inbuilt function and the corresponding method <code>TriggerFromChild</code> in ParentComponent is called and we need to use <code>StateHasChanged()</code> to notify the state changed in Parent.</p> <p>We can achieve two way bindings using <code>Action&lt;&gt;</code> and <code>EventCallback&lt;&gt;</code> and one thing to notify here is whenever we use <code>Action</code> we are manually notifying <code>StateHasChanged()</code>, but its not the case for <code>EventCallback</code>.</p> <h2 id="cascading-values-and-parameters"><a href="#cascading-values-and-parameters" aria-hidden="true" class="header-anchor">#</a> Cascading values and parameters</h2> <p>Blazor provides a way to pass data can across the entire RenderTree(all components) using <code>CascadingValue</code> and <code>CascadingParameter</code> without the need to pass as component attributes and the value can be received in RenderTree (Sub Components) by decorating property as <code>[CascadingParameter]</code> instead of <code>[Parameter]</code>.</p> <div class="language-csharp extra-class"><pre class="language-csharp"><code><span class="token comment">//RootComponent.razor</span>
+@page <span class="token string">&quot;/base-component&quot;</span>
+<span class="token operator">&lt;</span>h3<span class="token operator">&gt;</span> <span class="token class-name">App</span> <span class="token class-name">Base</span> Component<span class="token operator">&lt;</span><span class="token operator">/</span>h3<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span><span class="token class-name">CascadingValue</span> Value<span class="token operator">=</span><span class="token string">&quot;@pName&quot;</span> Name<span class="token operator">=</span><span class="token string">&quot;ProfileName&quot;</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token class-name">CascadingValue</span> Value<span class="token operator">=</span><span class="token string">&quot;@pAge&quot;</span> Name<span class="token operator">=</span><span class="token string">&quot;ProfileAge&quot;</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>ParentComponent<span class="token operator">/</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>CascadingValue<span class="token operator">&gt;</span>    
+<span class="token operator">&lt;</span><span class="token operator">/</span>CascadingValue<span class="token operator">&gt;</span>
+
+@functions <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> <span class="token keyword">string</span> pName <span class="token punctuation">{</span><span class="token keyword">get</span><span class="token punctuation">;</span><span class="token keyword">set</span><span class="token punctuation">;</span><span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token string">&quot;New To Blazor&quot;</span><span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token keyword">int</span> pAge <span class="token punctuation">{</span><span class="token keyword">get</span><span class="token punctuation">;</span><span class="token keyword">set</span><span class="token punctuation">;</span><span class="token punctuation">}</span> <span class="token operator">=</span>  <span class="token number">35</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-csharp extra-class"><pre class="language-csharp"><code><span class="token comment">//ParentComponent.razor</span>
+<span class="token operator">&lt;</span>h3<span class="token operator">&gt;</span> <span class="token class-name">Parent</span> Component<span class="token operator">&lt;</span><span class="token operator">/</span>h3<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>p<span class="token operator">&gt;</span> <span class="token class-name">Profile</span> <span class="token class-name">Name</span> <span class="token keyword">is</span> <span class="token punctuation">:</span> @<span class="token class-name">Name</span>  and <span class="token class-name">Age</span> <span class="token keyword">is</span> <span class="token punctuation">:</span> @Age<span class="token punctuation">.</span><span class="token function">ToString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span>
+
+@functions<span class="token punctuation">{</span>
+    <span class="token punctuation">[</span><span class="token class-name">CascadingParameter</span><span class="token punctuation">(</span>Name <span class="token operator">=</span> <span class="token string">&quot;ProfileName&quot;</span><span class="token punctuation">)</span><span class="token punctuation">]</span> 
+    <span class="token keyword">string</span> Name <span class="token punctuation">{</span> <span class="token keyword">get</span><span class="token punctuation">;</span> <span class="token keyword">set</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">[</span><span class="token class-name">CascadingParameter</span><span class="token punctuation">(</span>Name <span class="token operator">=</span> <span class="token string">&quot;ProfileAge&quot;</span><span class="token punctuation">)</span><span class="token punctuation">]</span> 
+    <span class="token keyword">int</span> Age <span class="token punctuation">{</span><span class="token keyword">get</span><span class="token punctuation">;</span><span class="token keyword">set</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Here in <code>CascadingParameter</code>, the <code>Name</code> parameter have to match with <code>Name</code> attribute with <code>CascadingValue</code> component, if we not mentioned any Name, the variable type in CascadingParameter got matches with the Value attribute in CascadingValue.</p> <p>It's always better to always mention <code>Name</code> parameter to avoid confusion and its useful while application grows.</p> <h2 id="render-fragments-dynamic-content"><a href="#render-fragments-dynamic-content" aria-hidden="true" class="header-anchor">#</a> Render Fragments (Dynamic Content)</h2> <p>Instead of passing any content from Parent to Child components using attributes, we can pass content within component tag elements and can be rendered in child components using <code>RenderFragment</code> property.</p> <h3 id="approach-1-2"><a href="#approach-1-2" aria-hidden="true" class="header-anchor">#</a> Approach 1:</h3> <p>Here <code>ChildContent</code> is the naming convention we need to use in Child component for RenderFragment property to get the content from Parent,</p> <div class="language-csharp extra-class"><pre class="language-csharp"><code><span class="token comment">//ParentComponent.razor</span>
+<span class="token operator">&lt;</span>h3<span class="token operator">&gt;</span> <span class="token class-name">Parent</span> Component<span class="token operator">&lt;</span><span class="token operator">/</span>h3<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>ChildComponent<span class="token operator">&gt;</span>
+    <span class="token class-name">The</span> line here <span class="token keyword">is</span> passed to child <span class="token keyword">from</span> Parent<span class="token operator">!</span><span class="token operator">!</span><span class="token operator">!</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>ChildComponent<span class="token operator">&gt;</span>
+</code></pre></div><div class="language-csharp extra-class"><pre class="language-csharp"><code><span class="token comment">//ChildComponent.razor</span>
+<span class="token operator">&lt;</span>h4<span class="token operator">&gt;</span><span class="token class-name">Child</span> Component<span class="token operator">&lt;</span><span class="token operator">/</span>h4<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>p<span class="token operator">&gt;</span>@ChildContent<span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span>
+
+@functions<span class="token punctuation">{</span>
+    <span class="token punctuation">[</span><span class="token class-name">Parameter</span><span class="token punctuation">]</span>
+    <span class="token keyword">private</span> <span class="token class-name">RenderFragment</span> ChildContent <span class="token punctuation">{</span> <span class="token keyword">get</span><span class="token punctuation">;</span> <span class="token keyword">set</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>   
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="approach-2-2"><a href="#approach-2-2" aria-hidden="true" class="header-anchor">#</a> Approach 2:</h3> <p><code>RenderFragment</code> mostly used for Templating purpose and render the content based on logics inside Child Component.</p> <div class="language-csharp extra-class"><pre class="language-csharp"><code><span class="token comment">//ParentComponent.razor</span>
+<span class="token operator">&lt;</span>h3<span class="token operator">&gt;</span> <span class="token class-name">Parent</span> Component<span class="token operator">&lt;</span><span class="token operator">/</span>h3<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>ChildComponent<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>SampleText<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>p<span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span>b<span class="token operator">&gt;</span><span class="token class-name">Bold</span> <span class="token class-name">Text</span> here<span class="token operator">!</span><span class="token operator">!</span><span class="token operator">!</span><span class="token operator">&lt;</span><span class="token operator">/</span>b<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>SampleText<span class="token operator">&gt;</span>    
+<span class="token operator">&lt;</span><span class="token operator">/</span>ChildComponent<span class="token operator">&gt;</span>
+</code></pre></div><div class="language-csharp extra-class"><pre class="language-csharp"><code><span class="token comment">//ChildComponent.razor</span>
+<span class="token operator">&lt;</span>h4<span class="token operator">&gt;</span><span class="token class-name">Child</span> Component<span class="token operator">&lt;</span><span class="token operator">/</span>h4<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+    @<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> <span class="token number">3</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token operator">&lt;</span>h5<span class="token operator">&gt;</span><span class="token class-name">Line</span> No <span class="token punctuation">:</span> @i<span class="token operator">&lt;</span><span class="token operator">/</span>h5<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>@SampleText<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+    <span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+
+@functions<span class="token punctuation">{</span>
+    <span class="token punctuation">[</span><span class="token class-name">Parameter</span><span class="token punctuation">]</span>
+    <span class="token keyword">private</span> <span class="token class-name">RenderFragment</span> SampleText <span class="token punctuation">{</span> <span class="token keyword">get</span><span class="token punctuation">;</span> <span class="token keyword">set</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>   
+<span class="token punctuation">}</span>
+</code></pre></div><p>Here <code>SampleText</code> is not an existing component, its newly created here in Parent component inside <code>ChildComponent</code> tag element and property with same name <code>SampleText</code> created inside Child component.</p> <p>The text inside <code>SampleText</code> is rendered 3 times inside the for loop in Child Component, and this will be helpful creating template components, tables, etc.,</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">5/25/2019, 6:32:01 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/tutorial/AboutComponent.html" class="prev">
+          About Components
+        </a></span> <span class="next"><a href="/tutorial/ComponentLifecycle.html">
+          Lifecycle Methods
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.e40b9eed.js" defer></script><script src="/assets/js/2.b391b017.js" defer></script><script src="/assets/js/12.4caa5bc1.js" defer></script>
+  </body>
+</html>
