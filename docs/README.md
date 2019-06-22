@@ -43,4 +43,6 @@ footer: Site built using Vuepress | Copyright © 2019 - studyblazor.com
 ::: tip Preview Release
 Client side Blazor is in preview release and no longer an experiment project. 
 :::
- <HomeFooter />
+
+<GooglePlayBadge />
+<HomeFooter />
