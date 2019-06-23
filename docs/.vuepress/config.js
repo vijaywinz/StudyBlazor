@@ -14,10 +14,10 @@ module.exports = {
         ['meta', { property:'og:url',content:'https://studyblazor.com'}],
         ['meta', { property:'og:image',content:'https://studyblazor.com/logo.png'}],
         ['script',{type:'application/ld+json'},JSON.stringify(schemaorg)],
-        ['script', { async:'' , src: '//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js' }],
+        ['script', { async:'' , src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js' }],
         ['script', {},
             '(adsbygoogle = window.adsbygoogle || []).push({ google_ad_client: "ca-pub-9955716341281227", enable_page_level_ads: true });'],
-            ['link', { rel: 'stylesheet', type:"text/css", href: 'https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css' }],
+        ['link', { rel: 'stylesheet', type:"text/css", href: 'https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css' }],
         ['script',{ src: 'https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js'}],
         ['script',{}, `window.addEventListener("load", function(){
             window.cookieconsent.initialise({
