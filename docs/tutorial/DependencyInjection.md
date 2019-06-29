@@ -30,7 +30,10 @@ public void ConfigureServices(IServiceCollection services)
     }
 }
 ```
-
+<GoogleInarticle
+  ad-client="ca-pub-9955716341281227"
+  ad-slot="8912739123" />
+  
 ## Consuming REST API Service
 
 Below in the default boilerplate application provided by blazor, in that the `FetchData` component uses `HttpClient` System class, that can be injected using `@inject` and further extended to access REST API services,

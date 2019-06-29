@@ -25,6 +25,10 @@ dotnet run
 >
 > http://localhost:5001
 
+<GoogleInarticle
+  ad-client="ca-pub-9955716341281227"
+  ad-slot="8912739123" />
+  
 ## View from Browser Dev tools
 
 The below image shows the list of files got loaded while blazor application loads, 

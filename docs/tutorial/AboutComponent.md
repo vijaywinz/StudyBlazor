@@ -34,6 +34,10 @@ Razor HTML syntax is a combination of C# code with HTML. This section finally re
 ### Function section:
 The functions section in a component hold user action functions(Event methods), local variables and properties which passed from/to parent/child components.
 
+<GoogleInarticle
+  ad-client="ca-pub-9955716341281227"
+  ad-slot="8912739123" />
+
 ## Attributes & parameters
 Lets understand the basic terminologies used in general for SPA,
 

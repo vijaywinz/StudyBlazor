@@ -68,6 +68,9 @@ The `bind` attribute can be extended with value and events `bind-value-<onevents
     string updateString = "";
 }
 ```
+<GoogleInarticle
+  ad-client="ca-pub-9955716341281227"
+  ad-slot="8912739123" />
 
 ### Between Components:
 #### Approach 1:
@@ -200,7 +203,10 @@ Here in ChildComponent the Action property `EventFromChild` is manually triggere
 
 We can achieve two way bindings using `Action<>` and `EventCallback<>` and one thing to notify here is whenever we use `Action` we are manually notifying `StateHasChanged()`, but its not the case for `EventCallback`.
 
-
+<GoogleInarticle
+  ad-client="ca-pub-9955716341281227"
+  ad-slot="8912739123" />
+  
 ## Cascading values and parameters
 
 Blazor provides a way to pass data can across the entire RenderTree(all components) using `CascadingValue` and `CascadingParameter` without the need to pass as component attributes and the value can be received in RenderTree (Sub Components) by decorating property as `[CascadingParameter]` instead of `[Parameter]`.
