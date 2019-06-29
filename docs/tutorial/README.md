@@ -25,3 +25,7 @@ In SPA, the dynamically renders block in a page based on user interaction are ca
 ## Disadvantages
 * Javascript is already very mature and lot of libraries already exists in the market.
 * Blazor with Web Assembly standard is new to the market and takes time to mature and .net is early in the WebAssembly race.
+
+<GoogleAdsense
+  ad-client="ca-pub-9955716341281227"
+  ad-slot="7904298842" />

@@ -11,3 +11,7 @@ I would appreciate your feedback about this website. Please write me an email.
 Vijay
 
 [Linkedin](https://www.linkedin.com/in/vijayakumar-shanmugam)
+
+<GoogleAdsense
+  ad-client="ca-pub-9955716341281227"
+  ad-slot="7904298842" />

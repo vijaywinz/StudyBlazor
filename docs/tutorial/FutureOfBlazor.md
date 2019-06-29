@@ -21,3 +21,6 @@ Microsoft > Github > Electron.
 :::
 **So, excited to see Blazor plays a major role in future and alternate to javascript using .Net 5** :smile:.
  
+<GoogleAdsense
+  ad-client="ca-pub-9955716341281227"
+  ad-slot="7904298842" />

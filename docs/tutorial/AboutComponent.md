@@ -65,3 +65,7 @@ Here in Parent Component the Child Component is placed and `Title` is component 
 }
 ```
 Here in Child Component the attribute `Title` matches with property in child component functions section decorated with `[Parameter]`
+
+<GoogleAdsense
+  ad-client="ca-pub-9955716341281227"
+  ad-slot="7904298842" />

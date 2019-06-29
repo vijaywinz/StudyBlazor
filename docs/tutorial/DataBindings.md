@@ -299,3 +299,7 @@ Here `ChildContent` is the naming convention we need to use in Child component f
 Here `SampleText` is not an existing component, its newly created here in Parent component inside `ChildComponent` tag element and property with same name `SampleText` created inside Child component.
 
 The text inside `SampleText` is rendered 3 times inside the for loop in Child Component, and this will be helpful creating template components, tables, etc.,  
+
+<GoogleAdsense
+  ad-client="ca-pub-9955716341281227"
+  ad-slot="7904298842" />

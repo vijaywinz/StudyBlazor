@@ -53,3 +53,6 @@ These Terms constitute the entire agreement between _Study Blazor_ and you in re
 ## Governing Law & Jurisdiction
 These Terms will be governed by and interpreted in accordance with the laws of the State of India, and you submit to the non-exclusive jurisdiction of the state and federal courts located in India for the resolution of any disputes.
 
+<GoogleAdsense
+  ad-client="ca-pub-9955716341281227"
+  ad-slot="7904298842" />

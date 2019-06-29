@@ -49,3 +49,7 @@ This Privacy Policy applies only to our online activities and is valid for visit
 ## Consent
 
 By using our website, you hereby consent to our Privacy Policy and agree to its Terms and Conditions.
+
+<GoogleAdsense
+  ad-client="ca-pub-9955716341281227"
+  ad-slot="7904298842" />

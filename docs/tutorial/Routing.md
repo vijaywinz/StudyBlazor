@@ -40,3 +40,7 @@ A component can have multiple routings
     private int sample { get; set; } = 100;
 }
 ```
+
+<GoogleAdsense
+  ad-client="ca-pub-9955716341281227"
+  ad-slot="7904298842" />

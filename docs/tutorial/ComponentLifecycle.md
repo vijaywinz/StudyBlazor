@@ -47,3 +47,7 @@ protected override bool ShouldRender()
     return renderUI;
 }
 ```
+
+<GoogleAdsense
+  ad-client="ca-pub-9955716341281227"
+  ad-slot="7904298842" />

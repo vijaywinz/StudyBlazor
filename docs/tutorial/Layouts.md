@@ -24,3 +24,6 @@ The boilerplate code uses bootstrap CSS, in the MainLayout component based on th
    Fetch data
 </NavLink>
 ```
+<GoogleAdsense
+  ad-client="ca-pub-9955716341281227"
+  ad-slot="7904298842" />

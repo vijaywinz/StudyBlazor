@@ -38,3 +38,7 @@ The below image shows the list of files got loaded while blazor application load
 ::: warning 
 In current preview release, the initial framework dll takes some extra bytes during page load and size may reduce later in actual release.
 :::
+
+<GoogleAdsense
+  ad-client="ca-pub-9955716341281227"
+  ad-slot="7904298842" />
