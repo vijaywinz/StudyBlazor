@@ -1,3 +1,8 @@
+
+<GoogleAdsense
+  ad-client="ca-pub-9955716341281227"
+  ad-slot="7904298842" />
+ 
 # Future of Blazor
 Microsoft Dot Net have multiple platforms and each serves for different purpose,
 

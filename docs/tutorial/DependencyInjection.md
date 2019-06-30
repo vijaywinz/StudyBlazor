@@ -1,3 +1,8 @@
+
+<GoogleAdsense
+  ad-client="ca-pub-9955716341281227"
+  ad-slot="7904298842" />
+ 
 # Dependency Injection
 Dependency injection(DI) is achieved in blazor for each component level by using `@inject` directives.
 

@@ -1,3 +1,8 @@
+
+<GoogleAdsense
+  ad-client="ca-pub-9955716341281227"
+  ad-slot="7904298842" />
+ 
 # About Components
 
 The basic structure of a component in blazor can be segregated into 3 sections as below,

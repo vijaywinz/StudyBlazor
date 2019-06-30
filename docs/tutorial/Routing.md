@@ -1,3 +1,8 @@
+
+<GoogleAdsense
+  ad-client="ca-pub-9955716341281227"
+  ad-slot="7904298842" />
+ 
 # Routing
 Client side routing can be done in blazor by decorating the component with `@page` directive as we already seen in previous examples,
 ```csharp

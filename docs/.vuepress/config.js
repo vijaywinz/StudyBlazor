@@ -54,14 +54,14 @@ module.exports = {
         sidebar: {
             '/tutorial/': [
                 '',
-                'Install',
-                'AboutComponent',
-                'DataBindings',
-                'ComponentLifecycle',
-                'DependencyInjection',
-                'Routing',
-                'Layouts',
-                'FutureOfBlazor'
+                ['Install','Installation'],
+                ['AboutComponent','About Components'],
+                ['DataBindings','Data Bindings'],
+                ['ComponentLifecycle','Lifecycle Methods'],
+                ['DependencyInjection','Dependency Injection'],
+                ['Routing','Routing'],
+                ['Layouts','Page Layouts'],
+                ['FutureOfBlazor','Future of Blazor']
             ],
             '/privacy-policy/': [
                 ''

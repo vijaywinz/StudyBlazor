@@ -1,3 +1,8 @@
+
+<GoogleAdsense
+  ad-client="ca-pub-9955716341281227"
+  ad-slot="7904298842" />
+  
 # Lifecycle Methods
 Blazor provides life cycle methods for a component, as the same way the page life cycle events available in ASP.Net Web Forms.
 

@@ -1,3 +1,8 @@
+
+<GoogleAdsense
+  ad-client="ca-pub-9955716341281227"
+  ad-slot="7904298842" />
+ 
 # Installation
 Please find below the steps for installation to start working in blazor,
 

@@ -1,3 +1,8 @@
+
+<GoogleAdsense
+  ad-client="ca-pub-9955716341281227"
+  ad-slot="7904298842" />
+ 
 # Data Bindings
 ## One way binding
 One way binding is simple and straight forward in Blazor and no need of any UI refresh/render. The following example shows the one way data binding,
