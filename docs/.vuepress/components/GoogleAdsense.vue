@@ -1,9 +1,9 @@
 <template>
   <ins class="adsbygoogle"
+    :style="adStyle"
     :data-ad-client="adClient"
     :data-ad-slot="adSlot"
-    :data-ad-format="adFormat"
-    :style="adStyle"
+    :data-ad-format="adFormat"    
     :data-full-width-responsive="responsive"></ins>
 </template>
 
